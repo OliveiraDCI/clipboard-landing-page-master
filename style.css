@@ -1,3 +1,10 @@
+:root {
+  --primary-strong: hsl(171, 66%, 44%);
+  --primary-light: hsl(233, 100%, 69%);
+  --neutral-dark: hsl(210, 10%, 33%);
+  --neutral-light: hsl(201, 11%, 66%);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,4 +13,23 @@
 
 html {
   font-size: 62.5%;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+
+p,
+.footer-links {
+  font-size: 1.2rem;
+}
+
+.logo-footer {
+  width: 30px;
+}
+
+header {
+  background-image: url(/images/bg-header-desktop.png);
 }
