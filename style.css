@@ -30,6 +30,54 @@ p,
   width: 30px;
 }
 
+/* Header Section */
+
 header {
-  background-image: url(/images/bg-header-desktop.png);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff),
+    url(/images/bg-header-desktop.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-bottom: 10rem;
 }
+
+.logo-header {
+  display: block;
+  width: auto;
+  margin: 0 auto;
+  padding: 15rem 0 5rem 0;
+}
+
+.paragraph-header {
+  width: 550px;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  padding: 2rem 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Buttons */
+
+.btn {
+  display: inline-block;
+  border-radius: 20px;
+  margin: 2rem 0.5rem;
+  padding: 0.5rem 2rem;
+  color: #fff;
+  font-size: 1.2rem;
+  letter-spacing: 0.6px;
+}
+
+.btn-ios {
+  background-color: var(--primary-strong);
+}
+
+.btn-mac {
+  background-color: var(--primary-light);
+}
+
+/* Section Two */
