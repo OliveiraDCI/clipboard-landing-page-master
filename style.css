@@ -1,3 +1,4 @@
+/* Reset */
 :root {
   --primary-strong: hsl(171, 66%, 44%);
   --primary-light: hsl(233, 100%, 69%);
@@ -21,55 +22,88 @@ body {
   line-height: 2.5rem;
 }
 
-p,
-.footer-links {
-  font-size: 1.2rem;
-}
-
-.logo-footer {
-  width: 30px;
-}
-
-/* Header Section */
-
-header {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff),
-    url(/images/bg-header-desktop.png);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
+/* - */
+/* - */
+/* General */
+p {
+  font-size: 1.4rem;
+  color: var(--neutral-light);
   text-align: center;
-  padding-bottom: 10rem;
-}
-
-.logo-header {
-  display: block;
-  width: auto;
-  margin: 0 auto;
-  padding: 15rem 0 5rem 0;
-}
-
-.paragraph-header {
   width: 550px;
   margin: 0 auto;
-  font-size: 1.6rem;
-  padding: 2rem 0;
+  padding: 2rem 0 6.5rem;
 }
 
-a {
-  text-decoration: none;
+h1,
+h2,
+h3 {
+  text-align: center;
+  color: var(--neutral-dark);
 }
 
+h2 {
+  padding-top: 8rem;
+}
+
+.section-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.sub-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2rem;
+}
+
+.sub-items-vertical {
+  flex-direction: column;
+}
+
+.devices-img {
+  display: block;
+  width: 75rem;
+  margin: 2rem auto;
+}
+
+.icons-img {
+  display: block;
+  margin: 0 auto 30px;
+}
+
+.icon-paper {
+  padding-top: 15px;
+}
+
+.width-sml {
+  width: 30rem;
+}
+
+.padding-bottom-last-section {
+  padding-bottom: 0.5rem;
+}
+
+/* - */
+/* - */
 /* Buttons */
 
 .btn {
   display: inline-block;
   border-radius: 20px;
   margin: 2rem 0.5rem;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 2.5rem;
   color: #fff;
   font-size: 1.2rem;
   letter-spacing: 0.6px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.btn-container {
+  text-align: center;
+  margin: 2rem auto;
 }
 
 .btn-ios {
@@ -80,4 +114,135 @@ a {
   background-color: var(--primary-light);
 }
 
+/* - */
+/* - */
+/* Header Section */
+
+header {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff),
+    url(/images/bg-header-desktop.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.logo-header {
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+  padding: 15rem 0 5rem 0;
+}
+
+.paragraph-header {
+  width: 550px;
+  margin: 0 auto;
+  font-size: 1.7rem;
+  padding: 2rem 0;
+  color: var(--neutral-light);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* - */
+/* - */
 /* Section Two */
+
+.monitor-section {
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.monitor-img {
+  float: left;
+  position: relative;
+  /* width: 400px; */
+  right: 50px;
+}
+
+.align-left {
+  text-align: left;
+  width: 300px;
+}
+
+.sub-items-vertical {
+  margin: 5rem 10rem auto 0;
+}
+
+/* - */
+/* - */
+/* Section Logo Images */
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--neutral-dark);
+}
+
+.logo-img {
+  margin: 5.5rem 4rem;
+}
+
+.section-bottom {
+  margin-bottom: 8rem;
+}
+
+/* - */
+/* - */
+/* Footer */
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(211, 211, 211, 0.108);
+  height: 10rem;
+}
+
+.footer-logo-container {
+  width: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-footer {
+  width: 50px;
+}
+
+.footer-social-media-container {
+  display: flex;
+  width: 50rem;
+  flex-direction: row;
+  position: relative;
+  right: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.social-media-links {
+  padding: 0 0.8rem;
+}
+
+.footer-links-container {
+  width: 1000px;
+  padding-left: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2px 2px;
+  grid-template-areas:
+    ". . ."
+    ". .";
+}
+
+.footer-links {
+  font-size: 1.2rem;
+  color: var(--neutral-light);
+  font-weight: 600;
+}
