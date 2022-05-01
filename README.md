@@ -19,4 +19,4 @@ This is a solution to the [Clipboard landing page challenge on Frontend Mentor](
 
 ### Acknowledgments
 
-I would like to thank my student colleagues Izikiel (GitHub account @Hizkiel-Mesfin) and Cem (GitHub account @cemkgrbz ) for challenging me with this project and further our practice beyond oour class exercises.
+I would like to thank my student colleagues Izikiel (GitHub account @Hizkiel-Mesfin) and Cem (GitHub account @cemkgrbz ) for challenging me with this project and further our practice beyond our class exercises.
